@@ -1,0 +1,47 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /Users/hanyalbeshry/.npm-global/bin/firebase deploy
+[debug] CLI Version:  3.0.8
+[debug] Platform:     darwin
+[debug] Node Version: v6.5.0
+[debug] Time:         Tue Oct 11 2016 11:46:13 GMT+0200 (SAST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/lyrica-5b912 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/lyrica-5b912/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'lyrica-5b912'...
+[info] 
+[info] i  deploying hosting
+[info] ✔  database: rules ready to deploy.
+[info] i  hosting: preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/lyrica-5b912/uploads/-KTn7QnuKomWtf6nOTZp?fileCount=137414&message= 
+[debug] Error: write EPIPE
+    at exports._errnoException (util.js:1026:11)
+    at WriteWrap.afterWrite (net.js:795:14)
+[error] 
+[error] Error: Server Error. write EPIPE
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /Users/hanyalbeshry/.npm-global/bin/firebase deploy
+[debug] CLI Version:  3.0.8
+[debug] Platform:     darwin
+[debug] Node Version: v6.5.0
+[debug] Time:         Tue Oct 11 2016 12:47:20 GMT+0200 (SAST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/lyrica-5b912 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/lyrica-5b912/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'lyrica-5b912'...
+[info] 
+[info] i  deploying hosting
+[info] ✔  database: rules ready to deploy.
+[info] i  hosting: preparing . directory for upload...
