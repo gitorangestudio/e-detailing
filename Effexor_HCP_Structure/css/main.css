@@ -1,0 +1,23 @@
+body	{max-height: 768px; overflow: hidden;}
+html 	{transform-origin: top center;}
+.slide-content	{background: #FFF 0px 0px no-repeat; background-size: 100%;width:1024px;height: 768px; position:relative; overflow: hidden;}
+
+.contianer {
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+#iframe_Id {background: #FFF;}
+#chartDiv	{overflow: hidden;position: absolute;}
+img	{position: absolute; -webkit-transform-style: preserve-3d; -webkit-transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;-webkit-perspective: 1000;
+-moz-transform-style: preserve-3d; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000;
+transform-style: preserve-3d; transform: translate3d(0, 0, 0); backface-visibility: hidden; perspective: 1000;}
+
+img#btn_play {
+	top: 229px;
+    left: 38%;
+    position: absolute;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Sequence Id="efexor_rx_01" NumberOfSlides="1" Orientation="Landscape" xmlns="urn:param-schema">
+   <Links>
+      <Link SequenceId="efexor_rx_02" />
+      <Link SequenceId="efexor_rx_03" />
+      <Link SequenceId="efexor_rx_04" />
+      <Link SequenceId="efexor_rx_05" />
+      <Link SequenceId="efexor_rx_06" />
+      <Link SequenceId="efexor_rx_07" />
+      <Link SequenceId="efexor_rx_08" />
+      <Link SequenceId="efexor_rx_09" />
+      <Link SequenceId="efexor_rx_10" />
+   </Links>
+</Sequence>

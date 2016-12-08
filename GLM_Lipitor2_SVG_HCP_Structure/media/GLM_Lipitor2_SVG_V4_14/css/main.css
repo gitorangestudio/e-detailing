@@ -1,0 +1,107 @@
+body	{max-height: 768px; overflow: hidden;}
+#slide-content	{ width:1024px;height:768px; position:relative; overflow: hidden;}
+
+#chartDiv	{overflow: hidden;position: absolute;}
+img, #img2	{position: absolute; -webkit-transform-style: preserve-3d; -webkit-transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;-webkit-perspective: 1000; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000; transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;perspective: 1000; -moz-transform-style: preserve-3d; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000; transform-style: preserve-3d; transform: translate3d(0, 0, 0); backface-visibility: hidden; perspective: 1000;}
+
+/*================== Menu ==================*/
+#menuTop	{ top: 0px; }
+.menu,	.subMenu	{ position: absolute;}
+
+#menuBK	{top: 0px;  	-webkit-animation: bounceInDown 1.5s both 0.5s; -moz-animation: bounceInDown 1.5s both 0.5s; animation: bounceInDown 1.5s both 0.5s; width: 1025px;}
+#menu01	{top: 28px;  left: 106px;   -webkit-animation: slideInDown 1.5s both 0.5s; -moz-animation: slideInDown 1.5s both 0.5s; animation: slideInDown 1.5s both 0.5s;}
+#menu02	{top: 12px; 	 left: 240px;  -webkit-animation: slideInDown 1.5s both 0.6s; -moz-animation: slideInDown 1.5s both 0.6s; animation: slideInDown 1.5s both 0.6s;}
+#menu03	{top: 3px; left: 381px;   -webkit-animation: slideInDown 1.5s both 0.7s; -moz-animation: slideInDown 1.5s both 0.7s; animation: slideInDown 1.5s both 0.7s;}
+#menu04	{top: 3px; left: 520px;   -webkit-animation: slideInDown 1.5s both 0.8s; -moz-animation: slideInDown 1.5s both 0.8s; animation: slideInDown 1.5s both 0.8s;}
+#menu05	{top: 12px; left: 660px;   -webkit-animation: slideInDown 1.5s both 0.9s; -moz-animation: slideInDown 1.5s both 0.9s; animation: slideInDown 1.5s both 0.9s;}
+#menu06	{top: 27px; left: 790px;   -webkit-animation: slideInDown 1.5s both 1.0s; -moz-animation: slideInDown 1.5s both 1.0s; animation: slideInDown 1.5s both 1.0s;}
+
+
+#subMenu_BK	{
+    top: 60px;
+    left: 122px;
+    -webkit-animation: fadeInDown 1.5s both 1.5s; -moz-animation: fadeInDown 1.5s both 1.5s; animation: fadeInDown 1.5s both 1.5s;
+}
+#subMenu_01	{
+    left: 306px;  top: 106px;
+    -webkit-animation: bounceIn 1.5s both 1.5s; -moz-animation: bounceIn 1.5s both 1.5s; animation: bounceIn 1.5s both 1.5s;
+}
+#subMenu_02	{
+    left: 396px;  top: 106px;
+    -webkit-animation: bounceIn 1.5s both 1.7s; -moz-animation: bounceIn 1.5s both 1.7s; animation: bounceIn 1.5s both 1.7s;
+}
+#subMenu_03	{
+    left: 483px;  top: 106px;
+    -webkit-animation: bounceIn 1.5s both 1.9s; -moz-animation: bounceIn 1.5s both 1.9s; animation: bounceIn 1.5s both 1.9s;
+}
+#subMenu_04	{
+    left: 570px;  top: 106px;
+    -webkit-animation: bounceIn 1.5s both 2.1s; -moz-animation: bounceIn 1.5s both 2.1s; animation: bounceIn 1.5s both 2.1s;
+}
+
+/*=================== Footer ================*/
+#footerBK	{
+    bottom: -1px;
+    left: -1px;
+    -webkit-animation: bounceInUp 1.5s both 0.5s; -moz-animation: bounceInUp 1.5s both 0.5s; animation: bounceInUp 1.5s both 0.5s;
+	width: 1024px;
+}  
+
+/*=================== homelink ================*/
+#homeLink	{position: absolute; width: 145px; height: 80px; top: 664px; left: 46px;}
+
+/*=================== Reference and Info popup ===============*/
+.refBtn		{position: absolute; width: 107px; height: 92px;}
+.refDiv		{top: 0px; position: absolute; width: 0px; height: 0px; overflow: hidden;   z-index: 1; background: #dff3fa;}
+
+.refDiv.visible	{-webkit-animation: refAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; -moz-animation: refAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; animation: refAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; -webkit-transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;-webkit-perspective: 1000; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000; transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;perspective: 1000;}
+.refDiv.hidden	{-webkit-animation: reRefAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; -moz-animation: reRefAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; animation: reRefAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; -webkit-transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;-webkit-perspective: 1000; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000; transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;perspective: 1000;}
+
+#infoBtnSpan	{position: absolute; width: 101px; height: 92px; top: 666px; left: 786px; -webkit-animation: zoomIn 1.5s both 1.3s; -moz-animation: zoomIn 1.5s both 1.3s; animation: zoomIn 1.5s both 1.3s;}
+#infoBtn		{}
+#infoDiv		{top: 0px; position: absolute; left: 1024px; opacity: 0; background: #dff3fa; width: 1024px; height: 768px;}
+
+#infoDiv.visible{-webkit-animation: infoAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; -moz-animation: infoAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; animation: infoAni 1s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both;}
+#infoDiv.hidden{-webkit-animation: reInfoAni 2s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; -moz-animation: reInfoAni 2s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both; animation: reInfoAni 2s cubic-bezier(0.175, 0.885, 0.320, 1) 0.1s 1 normal both;}
+
+
+
+img#btn_next {
+	top: 700px;
+	left: 550px;
+	position: absolute;
+	cursor: pointer;
+	width: 75px;
+}
+img#btn_prev {
+	top: 700px;
+	left: 475px;
+	position: absolute;
+	cursor: pointer;
+	width: 75px;
+}
+@-webkit-keyframes refAni {
+  100% { width: 1024px; height: 768px; }
+}
+
+@-webkit-keyframes reRefAni {
+  0% { 	width: 1024px; 	height: 768px;   }
+  100% { width: 0px; height: 0px; }
+}
+@-webkit-keyframes infoAni {    
+    100%{
+        -webkit-transform: translate3d(-1024px , 0px , 0px);
+		opacity: 1;
+      } 	  
+}
+@-webkit-keyframes reInfoAni {    
+    0%{
+        -webkit-transform: translate3d(-1024px , 0px , 0px);width: 1024px; 	height: 768px;
+		opacity: 1;
+      } 	  
+    100%{
+        -webkit-transform: translate3d(1024px , 0px , 0px);width: 0px; height: 0px;
+		opacity: 0;
+      }   
+
+}

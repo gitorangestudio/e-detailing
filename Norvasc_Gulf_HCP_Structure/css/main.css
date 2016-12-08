@@ -1,0 +1,936 @@
+body	{max-height: 768px; overflow: hidden;}
+html 	{transform-origin: top;}
+.slide-content	{background: url("../media/images/bk.png") 0px 0px no-repeat; background-size: 100%;width:1024px;height: 768px; position:relative; overflow: hidden;}
+.bk01	{background: none;}
+.bk11	{background: url("../media/images/11_bk.png") 0px 0px no-repeat; }
+
+.contianer {
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.contianer ul {
+    width: 12288px;
+}
+
+.contianer ul li {
+	width: 1024px;
+	height: 768px;
+    float: left;
+	left: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+#chartDiv	{overflow: hidden;position: absolute;}
+img	{position: absolute; -webkit-transform-style: preserve-3d; -webkit-transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;-webkit-perspective: 1000;
+-moz-transform-style: preserve-3d; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000;
+transform-style: preserve-3d; transform: translate3d(0, 0, 0); backface-visibility: hidden; perspective: 1000;}
+
+/*================== Menu ==================*/
+#menuLeft	{ top: 152px; }
+#menuRight	{ left: 906px; top: 23px; z-index: 1;}
+#menuTop	{ top: 150px;}
+.menu		{ position: absolute;}
+.menuItem	{ position:absolute; width: 49px; height: 106px;}
+.menuItem2	{ position:absolute; height: 60px; width: 151px;}
+
+#menu01	{top: 0px;   cursor: pointer;}
+#menu02	{top: 106px; cursor: pointer;}
+#menu03	{top: 214px; cursor: pointer;}
+#menu04	{top: 320px; cursor: pointer;}
+#menu05	{top: 426px; cursor: pointer;}
+#menu06	{top: 533px; cursor: pointer;}
+#menu07	{top: 106px; cursor: pointer;}
+#menu08	{top: 212px; cursor: pointer;}
+#menu09	{top: 318px; cursor: pointer;}
+
+/*=================== homelink ================*/
+#homeLink	{position: absolute; width: 145px; height: 80px; top: 676px; left: 853px;}
+
+/*=================== Reference and Info popup ===============*/
+.refBtn		{
+    position: absolute;  
+    width: 82px;  
+    height: 73px;  
+    background: url(../media/images/menu/btn_ref.png) 0 0 no-repeat;
+ }
+ .btn_Show{ position: absolute;  width: 82px;  height: 73px;  background: url(../media/images/menu/btn_show.png) no-repeat; z-index: 1;}
+ .btn_maxi { position: absolute;  width: 32px;  height: 37px;  background: url(../media/images/menu/btn_maxi.png) no-repeat;}
+ 
+ .showDiv {position: absolute; overflow: hidden;   }
+.popubDiv { top: 0px; left: 0px ;  z-index: 1; position: absolute; width: 1024px; height: 768px;}
+.refDiv		{position: absolute; width: 0px; height: 0px; overflow: hidden;   z-index: 1;}
+
+.visible {visibility: visible;}
+.hidden	{visibility: hidden;}
+
+
+@-webkit-keyframes refAni {
+  100% { width: 1024px; height: 768px; }
+}
+
+@-webkit-keyframes reRefAni {
+  0% { 	width: 1024px; 	height: 768px;   }
+  100% { width: 0px; height: 0px; }
+}
+.pdfLink	{position: absolute; width: 28px; height: 35px; -webkit-animation: fadeIn 1.5s both 3s; -moz-animation: fadeIn 1.5s both 3s; animation: fadeIn 1.5s both 3s; background: url(../media/images/menu/btn_pdf.png) no-repeat; }
+
+#closePDF	{position: absolute; top: 10px; left: 920px; width: 80px; height: 80px; background: #FFF; color: #333; 
+	text-align: center; line-height: 80px; border-radius: 100px; border: 5px solid rgba(0,0,0,0.8);
+	font-size: 32px; font-family: arial; display: none;}
+	
+	body	{max-height: 768px; overflow: hidden;}
+#slide-content	{background: no-repeat; width:1024px;height:768px; position:relative; overflow: hidden;}
+
+#chartDiv	{overflow: hidden;position: absolute;}
+img	{position: absolute; -webkit-transform-style: preserve-3d; -webkit-transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden;-webkit-perspective: 1000;
+-moz-transform-style: preserve-3d; -moz-transform: translate3d(0, 0, 0); -moz-backface-visibility: hidden;-moz-perspective: 1000;
+transform-style: preserve-3d; transform: translate3d(0, 0, 0); backface-visibility: hidden;perspective: 1000;}
+img#btn_next {
+	top: 152px;
+	left: 937px;
+	position: relative;
+	cursor: pointer;
+}
+img#btn_prev {
+	top: 144px;
+	left: -78px;
+	position: relative;
+	cursor: pointer;
+}
+img#btn_next02 {
+	top: 670px;
+	left: 963px;
+	position: relative;
+	cursor: pointer;
+	width: 52px;
+}
+img#btn_prev02 {
+	top: 670px;
+	left: 845px;
+	position: relative;
+	cursor: pointer;
+	width: 52px;
+}
+img#img0_01 {
+top: 0px;
+left: 0px;
+}
+img#img0_02 {
+    top: 80px;
+    left: 1px;
+    position: relative;
+	cursor: pointer;
+    overflow: hidden;
+    z-index: 3;
+}
+img#img1 {
+top: 0px;
+left: 0px;
+-webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s;
+}
+img#img2 {
+top: 599px;
+left: 747px;
+-webkit-animation: fadeIn 1.5s both 1.4s; -moz-animation: fadeIn 1.5s both 1.4s; animation: fadeIn 1.5s both 1.4s;
+}
+img#img3 {
+top: 710px;
+left: 26px;
+-webkit-animation: fadeIn 1.5s both 1.8s; -moz-animation: fadeIn 1.5s both 1.8s; animation: fadeIn 1.5s both 1.8s;
+}
+#img4 {
+top: 230px;
+left: 581px;
+position: relative;
+width: 99px;
+height: 140px;
+overflow: hidden;
+/* -webkit-animation: fadeIn 1.5s both 1.8s; -moz-animation: fadeIn 1.5s both 1.8s; animation: fadeIn 1.5s both 1.8s; */
+}
+#img5 {
+    top: 280px;
+    left: 451px;
+    position: relative;
+    width: 179px;
+    height: 140px;
+    overflow: hidden;
+    /* z-index: 3; */
+}
+#img6 {
+    top: 80px;
+    left: 1px;
+    position: relative;
+    width: 209px;
+    height: 110px;
+    overflow: hidden;
+    z-index: 3;
+}
+#refBtn 	{ top: 587px; left: 33px; }
+#refBtn_2 	{ top: 106px; left: 911px; }
+
+
+#pdfLink1	{top: 550px; left: 99px;}
+#pdfLink2	{top: 603px; left: 582px;  }
+#pdfLink3	{top: 506px; left: 876px;width: 69px; height: 49px;}
+#pdfLink4	{top: 559px; left: 785px;width: 125px; height: 28px;}
+#pdfLink5	{top: 590px; left: 772px;width: 89px; height: 29px;}
+
+img#img01_slide_01 {   top: 616px;left: 20px;}
+img#img02_slide_01 {   top: 622px;     left: 771px;}
+img#img03_slide_01 {   top: 700px;     left: 778px;}
+img#img04_slide_01 {   }
+img#img05_slide_01 {   top: 733px;	left: 633px;}
+img#img06_slide_01 {   top: 733px;	left: 633px;}
+
+img#img01_slide_02 {   top: 646px;	left: 24px;}
+img#img02_slide_02 {   top: 645px;	left: 537px;}
+img#img03_slide_02 {   top: 704px;  	left: 11px;}
+img#img04_slide_02 {   top: 733px;	left: 633px;}
+img#img05_slide_02 {   top: 733px;	left: 633px;}
+img#img06_slide_02 {   top: 733px;	left: 633px;}
+
+img#img01_slide_03 {   	top: 743px;     left: 656px;}
+img#img02_slide_03 {   top: 696px;	left: 20px;}
+img#img03_slide_03 {   top: 674px;  	left: 651px;}
+img#img04_slide_03 {   top: 733px;	left: 703px;}
+img#img05_slide_03 {   top: 733px;	left: 633px;}
+img#img06_slide_03 {   top: 733px;	left: 633px;}
+
+img#img01_slide_04 {   top: 677px;	left: 40px;}
+img#img02_slide_04 {   top: 719px;	left: 21px;}
+img#img03_slide_04 {   top: 674px;  	left: 651px;}
+img#img04_slide_04 {   top: 733px;	left: 703px;}
+img#img05_slide_04 {   top: 733px;	left: 633px;}
+img#img06_slide_04 {   top: 733px;	left: 633px;}
+
+img#img01_slide_05 {   top: 720px;	left: 629px;}
+img#img02_slide_05 {   top: 679px;	left: 21px;}
+img#img03_slide_05 {   top: 697px;  	left: 10px;}
+img#img04_slide_05 {   top: 599px;	left: 703px;}
+img#img05_slide_05 {   top: 746px;	left: 633px;}
+img#img06_slide_05 {   top: 733px;	left: 633px;}
+
+img#img01_slide_06 {   top: 687px;	left: 20px;}
+img#img02_slide_06 {   top: 745px;	left: 676px;}
+img#img03_slide_06 {   top: 709px;  	left: 21px;}
+img#img04_slide_06 {   top: 733px;	left: 703px;}
+img#img05_slide_06 {   top: 733px;	left: 633px;}
+img#img06_slide_06 {   top: 733px;	left: 633px;}
+
+img#img01_slide_07 {   top: 684px;	left: 21px;}
+img#img02_slide_07 {   top: 709px;	left: 24px;}
+img#img03_slide_07 {   top: 745px;  	left: 672px;}
+img#img04_slide_07 {   top: 733px;	left: 703px;}
+img#img05_slide_07 {   top: 733px;	left: 633px;}
+img#img06_slide_07 {   top: 733px;	left: 633px;}
+
+img#img01_slide_08 {   top: 667px;	left: 20px;}
+img#img02_slide_08 {   	top: 744px;     left: 669px;}
+img#img03_slide_08 {   top: 674px;  	left: 651px;}
+img#img04_slide_08 {   top: 733px;	left: 703px;}
+img#img05_slide_08 {   top: 733px;	left: 633px;}
+img#img06_slide_08 {   top: 733px;	left: 633px;}
+
+img#img01_slide_09 {   top: 745px;	left: 667px;}
+img#img02_slide_09 {   	     top: 655px;     left: 17px;}
+img#img03_slide_09 {   top: 674px;  	left: 651px;}
+img#img04_slide_09 {   top: 733px;	left: 703px;}
+img#img05_slide_09 {   top: 733px;	left: 633px;}
+img#img06_slide_09 {   top: 733px;	left: 633px;}
+
+img#img01_slide_10 {   top: 326px;	left: 80px;}
+img#img02_slide_10 {   	top: 424px;     left: 55px;}
+img#img03_slide_10 {   top: 494px;  	left: 57px;}
+img#img04_slide_10 {   top: 689px;	left: 53px;}
+img#img05_slide_10 {   top: 718px;	left: 16px;}
+img#img06_slide_10 {   top: 748px;	left: 761px;}
+
+img#img01_slide_11 {   top: 437px;	left: 51px;}
+img#img02_slide_11 {   top: 719px;	left: 21px;}
+img#img03_slide_11 {   top: 674px;  	left: 651px;}
+img#img04_slide_11 {   top: 733px;	left: 703px;}
+img#img05_slide_11 {   top: 733px;	left: 633px;}
+img#img06_slide_11 {   top: 733px;	left: 633px;}
+
+
+img#img1_02 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_02 { top: 89px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_02 { top: 0px; left: 17px;  }
+.visible img#img4_02 { top: 74px; left: 40px;   -webkit-animation: fadeIn 1.5s both .5s; -moz-animation: fadeIn 1.5s both .5s; animation: fadeIn 1.5s both .5s; }
+.visible img#img5_02 { top: 291px; left: 145px;  -webkit-animation: fadeIn 1.5s both 1.7s; -moz-animation: fadeIn 1.5s both 1.7s; animation: fadeIn 1.5s both 1.7s;}
+.visible img#img6_02 { top: 189px; left: 100px;  -webkit-animation: fadeIn 2s both 1.1s; -moz-animation: fadeIn 2s both 1.1s; animation: fadeIn 2s both 1.1s;}
+.visible img#img7_02 { top: 133px; left: 93px;  -webkit-animation: fadeIn 1.5s both .8s; -moz-animation: fadeIn 1.5s both .8s; animation: fadeIn 1.5s both .8s;}
+.visible img#img8_02 { top: 197px; left: 116px;  -webkit-animation: fadeIn 2s both 1.4s; -moz-animation: fadeIn 2s both 1.4s; animation: fadeIn 2s both 1.4s;}
+.visible img#img9_02 { top: 312px; left: 204px;  -webkit-animation: fadeIn 2s both 2s; -moz-animation: fadeIn 2s both 2s; animation: fadeIn 2s both 2s;}
+.visible img#img10_02 { top: 0px; left: 0px;    -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s;}
+img#img11_02 { top: 5px; left: 52px;   }
+img#img12_02 { top: 187px; left: 429px;  -webkit-animation: rotateIn 2s both 1.8s; -moz-animation: rotateIn 2s both 1.8s; animation: rotateIn 2s both 1.8s;}
+img#img13_02 { top: 285px; left: 481px;   -webkit-animation: fadeInDown 2s both 2.5s; -moz-animation: fadeInDown 2s both 2.5s; animation: fadeInDown 2s both 2.5s;}
+img#img14_02 { top: 250px; left: 594px;   -webkit-animation: rotateIn 1.5s both 2.1s; -moz-animation: rotateIn 1.5s both 2.1s; animation: rotateIn 1.5s both 2.1s;}
+img#img15_02 { top: 324px; left: 596px;  -webkit-animation: fadeInRight 2s both 2.5s; -moz-animation: fadeInRight 2s both 2.5s; animation: fadeInRight 2s both 2.5s;}
+img#img16_02 { top: 265px; left: 303px;  -webkit-animation: rotateIn 2s both 1.5s; -moz-animation: rotateIn 2s both 1.5s; animation: rotateIn 2s both 1.5s;}
+img#img17_02 { top: 342px; left: 372px;  -webkit-animation: fadeInLeft 2s both 2.5s; -moz-animation: fadeInLeft 2s both 2.5s; animation: fadeInLeft 2s both 2.5s;}
+img#img18_02 { top: 422px; left: 563px;    -webkit-animation: rotateIn 2s both 2.4s; -moz-animation: rotateIn 2s both 2.4s; animation: rotateIn 2s both 2.4s;}
+img#img19_02 { top: 436px; left: 566px;    -webkit-animation: fadeInUp 2s both 2.5s; -moz-animation: fadeInUp 2s both 2.5s; animation: fadeInUp 2s both 2.5s;}
+img#img20_02 { top: 187px; left: 429px;  -webkit-animation: rotateIn 2s both 1.8s; -moz-animation: rotateIn 2s both 1.8s; animation: rotateIn 2s both 1.8s;}
+img#img21_02 { top: 285px; left: 481px;   -webkit-animation: fadeInDown 2s both 2.5s; -moz-animation: fadeInDown 2s both 2.5s; animation: fadeInDown 2s both 2.5s;}
+img#img22_02 { top: 250px; left: 594px;   -webkit-animation: rotateIn 1.5s both 2.1s; -moz-animation: rotateIn 1.5s both 2.1s; animation: rotateIn 1.5s both 2.1s;}
+img#img23_02 { top: 324px; left: 596px;  -webkit-animation: fadeInRight 2s both 2.5s; -moz-animation: fadeInRight 2s both 2.5s; animation: fadeInRight 2s both 2.5s;}
+img#img24_02 { top: 265px; left: 303px;  -webkit-animation: rotateIn 2s both 1.5s; -moz-animation: rotateIn 2s both 1.5s; animation: rotateIn 2s both 1.5s;}
+img#img25_02 { top: 342px; left: 372px;  -webkit-animation: fadeInLeft 2s both 2.5s; -moz-animation: fadeInLeft 2s both 2.5s; animation: fadeInLeft 2s both 2.5s;}
+
+img#img12_02.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_02.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_02.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_02 	{ top: 137px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_02	{ top: 427px;  left: 413px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show3_02 	{ top: 587px; left: 33px; }
+#btn_show4_02 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_02 { bottom: 0px; left: 0px; }
+#btn_maxi2_02 { bottom: 145px; left: 28px; }
+#btn_maxi3_02 { top: 587px; left: 33px; }
+#btn_maxi4_02 { top: 587px; left: 33px; }
+
+#showDiv_1_02{ top: 144px; left: 80px; width: 750px; height: 100px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#showDiv_2_02{ top: 242px; left: 85px; width: 770px; height: 397px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#showDiv_3_02{ top: 0px; left: 0px; width:600px; height: 250px;}
+#showDiv_4_02{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_02 { }
+#popubDiv_2_02 { background: url("../media/images/02_popub_bk.png") 0px 0px no-repeat; z-index: 5;}
+#popubDiv_3_02 { top: 0px; left: 0px; width:600px; height: 250px;}
+#popubDiv_4_02 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+
+#pdfLink1_02	{top: 183px; left: 778px;}
+#pdfLink2_02	{top: 183px; left: 180px;z-index: 3;}
+#pdfLink3_02	{top: 506px; left: 876px;}
+#pdfLink4_02	{top: 559px; left: 785px;}
+#pdfLink5_02	{top: 590px; left: 772px;}
+
+
+img#img1_03 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_03 { top: 89px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_03 { top: 0px; /* left: 17px; */  }
+.visible img#img4_03 { /* top: 74px; */ /* left: 40px; */   /* -webkit-animation: fadeIn 1.5s both .5s; -moz-animation: fadeIn 1.5s both .5s; animation: fadeIn 1.5s both .5s; */}
+.visible img#img5_03 { top: 0px; left: 0px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img6_03 { top: 0px; left: 0px;  -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s;}
+.visible img#img7_03 { top: 30px; left: 221px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img8_03 { top: 49px; left: 196px;  -webkit-animation: fadeIn 1.5s both 0.4s; -moz-animation: fadeIn 1.5s both 0.4s; animation: fadeIn 1.5s both 0.4s;}
+.visible img#img9_03 { top: 522px; left: 618px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img10_03 { top: 522px; left: 199px;    -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s;}
+.visible img#img11_03 { top: 5px; left: 52px;   }
+.visible img#img12_03 { top: 522px; left: 410px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_03 { top: 55px; left: 210px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_03 { top: 531px; left: 216px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_03 { top: 535px; left: 420px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_03 { top: 533px; left: 639px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_03 { top: 10px; left: 13px; }
+.visible img#img18_03 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_03 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_03 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_03 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_03 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_03 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_03 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_03 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+img#img12_03.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_03.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_03.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_03 	{ top: 227px;  left: 133px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_03 	{ top: 457px;  left: 173px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show3_03 	{ top: 437px; left: 573px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show4_03 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_03 { bottom: 0px; left: 0px; }
+#btn_maxi2_03 { bottom: 0px; /* left: -30px; */ }
+#btn_maxi3_03 { top: 563px; left: 123px; }
+#btn_maxi4_03 { top: 587px; left: 33px; }
+
+#showDiv_1_03{ top: 144px; left: 50px; width: 300px; height: 200px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#showDiv_2_03{ top: 392px; left: 50px; width: 290px; height: 225px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#showDiv_3_03{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+#showDiv_4_03{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_03 { }
+#popubDiv_2_03 { }
+#popubDiv_3_03 {
+    background: url("../media/images/03_popub_bk.png") 0px 0px no-repeat;
+    z-index: 5;
+}
+#popubDiv_4_03 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_03	{top: 294px; left: 280px;z-index: 4;}
+#pdfLink2_03	{top: 570px; left: 283px;z-index: 4;}
+#pdfLink3_03	{top: 506px; left: 876px;}
+#pdfLink4_03	{top: 559px; left: 785px;}
+#pdfLink5_03	{top: 590px; left: 772px;}
+
+
+img#img1_04 { top: 47px; left: 61px;    /* -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s; */}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_04 { top: 169px; left: 33px;}
+
+img#img3_04 { top: 170px; left: 327px; }
+img#img4_04 { top: 169px; left: 620px;  }
+img#img5_04 { top: 390px; left: 190px; }
+img#img6_04 { top: 390px; left: 476px; }
+.visible img#img7_04 { top: 230px; left: -53px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img8_04 { top: 256px; /* left: 172px; */  -webkit-animation: fadeIn 1.5s both 0.4s; -moz-animation: fadeIn 1.5s both 0.4s; animation: fadeIn 1.5s both 0.4s;}
+.visible img#img9_04 { top: 111px; left: 247px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img10_04 { top: 111px; left: 245px;    -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s;}
+.visible img#img11_04 { top: 313px; left: 245px;   }
+.visible img#img12_04 { top: 313px; left: 244px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_04 { top: 425px; left: 244px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_04 { top: 402px; left: 243px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_04 { top: 629px; left: 89px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_04 { top: 517px; left: 633px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_04 { top: 10px; left: 13px; }
+.visible img#img18_04 { top: 37px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_04 { top: 41px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_04 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_04 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_04 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_04 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_04 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_04 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+.visible #div1_04 {top: 0px; left: 172px; width: 853px; width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+.visible #div2_04 {top: -603px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+.visible #div3_04 {top: -1206px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+
+img#img12_04.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_04.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_04.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_04 	{ top: 387px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_04 	{ top: 457px;  left: 173px;}
+#btn_show3_04	{ top: 437px; left: 573px; }
+#btn_show4_04 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_04 { bottom: -1px; left: 0px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#btn_maxi2_04 { bottom: 260px; left: 24px; }
+#btn_maxi3_04 { top: 587px; left: 33px; }
+#btn_maxi4_04 { top: 587px; left: 33px; }
+
+#showDiv_1_04{ top: 168px; left: 50px; width: 840px; height: 80px;}
+#showDiv_2_04{ top: 222px; left: 140px; width: 718px; height: 493px;}
+#showDiv_3_04{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_04{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_04 {
+    background: url("../media/images/04_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_04 { /* background: url("../media/images/04_popub_bk.png") 0px 0px no-repeat; */}
+#popubDiv_3_04 {
+    background: url("../media/images/04_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_04 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_04	{top: 180px; left: 595px;}
+#pdfLink2_04	{top: 292px; left: 267px;}
+#pdfLink3_04	{top: 506px; left: 876px;}
+#pdfLink4_04	{top: 559px; left: 785px;}
+#pdfLink5_04	{top: 590px; left: 772px;}
+
+
+img#img1_05 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_05 { top: 89px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_05 { top: 0px; left: 17px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img4_05 { /* top: 74px; */ /* left: 40px; */   -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img5_05 { top: 6px; left: 60px;  /* -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s; */}
+.visible img#img6_05 { top: 442px; left: 66px;  /* -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s; */}
+.visible img#img7_05 { top: -105px; left: 121px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img8_05 { top: 120px; left: 252px;  -webkit-animation: fadeIn 1.5s both 0.4s; -moz-animation: fadeIn 1.5s both 0.4s; animation: fadeIn 1.5s both 0.4s;}
+.visible img#img9_05 { top: 111px; left: 0px;  /* -webkit-animation: fadeIn 1.5s both .7s; -moz-animation: fadeIn 1.5s both .7s; animation: fadeIn 1.5s both .7s; */}
+.visible img#img10_05 { top: 111px; left: 0px; /* -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s; */}
+.visible img#img11_05 { top: 313px; /* left: 245px; */ /* -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s; */}
+.visible img#img12_05 { top: 313px; /* left: 244px; */ /* -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s; */}
+.visible img#img13_05 { top: 425px; /* left: 244px; */ /* -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s; */}
+.visible img#img14_05 { top: 402px; /* left: 243px; */ /* -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s; */}
+.visible img#img15_05 { top: 629px; left: 89px;  -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img16_05 { top: 517px; left: 633px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_05 { top: 10px; left: 13px; }
+.visible img#img18_05 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_05 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_05 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_05 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_05 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_05 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_05 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_05 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+.visible #div1_05 {top: 0px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+.visible #div2_05 {top: -603px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+.visible #div3_05 {top: -1206px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+
+img#img12_05.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_05.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_05.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_05 	{ top: 387px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_05	{ top: 457px;  left: 173px;}
+#btn_show3_05	{ top: 437px; left: 573px; }
+#btn_show4_05 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_05 { bottom: -1px; left: 0px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#btn_maxi2_05 { bottom: 260px; left: 24px; }
+#btn_maxi3_05 { top: 587px; left: 33px; }
+#btn_maxi4_05 { top: 587px; left: 33px; }
+
+#showDiv_1_05{ top: 168px; left: 50px; width: 840px; height: 80px;}
+#showDiv_2_05{ top: 222px; left: 140px; width: 688px; height: 493px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#showDiv_3_05{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_05{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_05 {
+    background: url("../media/images/05_popub_bk.png") 0px 0px no-repeat;
+ 
+    z-index: 5;
+}
+#popubDiv_2_05 { /* background: url("../media/images/05_popub_bk.png") 0px 0px no-repeat; */}
+#popubDiv_3_05 {
+    background: url("../media/images/05_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_05 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_05	{top: 191px; left: 351px;z-index: 4;}
+#pdfLink2_05	{top: 312px; left: 667px;}
+#pdfLink3_05	{top: 506px; left: 876px;}
+#pdfLink4_05	{top: 559px; left: 785px;}
+#pdfLink5_05	{top: 590px; left: 772px;}
+
+
+img#img1_06 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_06 { top: 89px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_06 { top: 0px; left: 17px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img4_06 { /* top: 74px; */ /* left: 40px; */   -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img5_06 { top: 0px; left: 60px;  /* -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s; */}
+.visible img#img6_06 { top: 138px; left: 86px;  /* -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s; */}
+.visible img#img7_06 { top: 230px; left: -53px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img8_06 { top: 256px; /* left: 172px; */  -webkit-animation: fadeIn 1.5s both 0.4s; -moz-animation: fadeIn 1.5s both 0.4s; animation: fadeIn 1.5s both 0.4s;}
+.visible img#img9_06 { top: 111px; left: 247px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img10_06 { top: 111px; left: 245px;    -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s;}
+.visible img#img11_06 { top: 313px; left: 245px;   }
+.visible img#img12_06 { top: 313px; left: 244px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_06 { top: 425px; left: 244px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_06 { top: 402px; left: 243px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_06 { top: 629px; left: 89px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_06 { top: 517px; left: 633px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_06 { top: 10px; left: 13px; }
+.visible img#img18_06 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_06 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_06 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_06 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_06 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_06 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_06 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_06 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+.visible #div1_06 {top: 0px; left: 172px; width: 853px; width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+.visible #div2_06 {top: -603px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+.visible #div3_06 {top: -1206px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: width 2s; -moz-transition: width 2s; transition: width 2s; }
+
+img#img12_06.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_06.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_06.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_06 	{ top: 387px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_06	{ top: 457px;  left: 173px;}
+#btn_show3_06 	{ top: 437px; left: 573px; }
+#btn_show4_06 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_06 { bottom: -1px; left: 0px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#btn_maxi2_06 { bottom: 260px; left: 24px; }
+#btn_maxi3_06 { top: 587px; left: 33px; }
+#btn_maxi4_06 { top: 587px; left: 33px; }
+
+#showDiv_1_06{ top: 168px; left: 50px; width: 840px; height: 80px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#showDiv_2_06{ top: 222px; left: 140px; width: 718px; height: 493px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#showDiv_3_06{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_06{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_06 {
+    background: url("../media/images/06_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_06 { /* background: url("../media/images/06_popub_bk.png") 0px 0px no-repeat; */}
+#popubDiv_3_06 {
+    background: url("../media/images/06_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_06 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_06	{top: 180px; left: 595px;}
+#pdfLink2_06	{top: 292px; left: 267px;}
+#pdfLink3_06	{top: 506px; left: 876px;}
+#pdfLink4_06	{top: 559px; left: 785px;}
+#pdfLink5_06	{top: 590px; left: 772px;}
+
+
+img#img1_07 { top: 35px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_07 { top: 73px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_07 { top: 0px; left: 17px;  }
+.visible img#img4_07 { /* top: 74px; */ /* left: 40px; */   -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img5_07 { top: 0px; left: 60px;  /* -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s; */}
+.visible img#img6_07 { top: 118px; left: 106px;  -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s;}
+.visible img#img7_07 {  bottom: 0px;   -webkit-animation: slideInUp 1.5s both 0.3s; -moz-animation: slideInUp 1.5s both 0.3s; animation: slideInUp 1.5s both 0.3s;}
+.visible img#img8_07 { /* top: 269px; */ left: 43px;  bottom: 0px; -webkit-animation: slideInUp 1.5s both 0.3s; -moz-animation: slideInUp 1.5s both 0.3s; animation: slideInUp 1.5s both 0.3s;}
+.visible img#img9_07 { left: 85px;  */  left: 43px;  bottom: 0px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s; -webkit-animation: slideInUp 1.5s both 0.3s; -moz-animation: slideInUp 1.5s both 0.3s; animation: slideInUp 1.5s both 0.3s;}
+.visible img#img10_07 {    left: 128px; */  left: 43px;  bottom: 0px;    -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s;    -webkit-animation: slideInUp 1.5s both 0.3s; -moz-animation: slideInUp 1.5s both 0.3s; animation: slideInUp 1.5s both 0.3s;}
+.visible img#img11_07 { /* top: 313px; */ /* left: 245px; */   bottom: 0px; -webkit-animation: slideInUp 1.5s both 0.6s; -moz-animation: slideInUp 1.5s both 0.6s; animation: slideInUp 1.5s both 0.6s;}
+.visible img#img12_07 { /* top: 313px; */ left: 44px; bottom: 0px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s; -webkit-animation: slideInUp 1.5s both 0.6s; -moz-animation: slideInUp 1.5s both 0.6s; animation: slideInUp 1.5s both 0.6s;}
+.visible img#img13_07 { /* top: 425px; */ left: 87px;  bottom: 0px; -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s; -webkit-animation: slideInUp 1.5s both 0.6s; -moz-animation: slideInUp 1.5s both 0.6s; animation: slideInUp 1.5s both 0.6s;}
+.visible img#img14_07 { /* top: 402px; */ left: 131px;  bottom: 0px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s; -webkit-animation: slideInUp 1.5s both 0.6s; -moz-animation: slideInUp 1.5s both 0.6s; animation: slideInUp 1.5s both 0.6s;}
+.visible img#img15_07 { /* top: 629px; */ /* left: 89px; */ bottom: 0px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s; -webkit-animation: slideInUp 1.5s both 0.9s; -moz-animation: slideInUp 1.5s both 0.9s; animation: slideInUp 1.5s both 0.9s;}
+.visible img#img16_07 { /* top: 517px; */ left: 43px; bottom: 0px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s; -webkit-animation: slideInUp 1.5s both 0.9s; -moz-animation: slideInUp 1.5s both 0.9s; animation: slideInUp 1.5s both 0.9s;}
+.visible img#img17_07 { /* top: 10px; */ left: 85px; bottom: 0px; -webkit-animation: slideInUp 1.5s both 0.9s; -moz-animation: slideInUp 1.5s both 0.9s; animation: slideInUp 1.5s both 0.9s;}
+.visible img#img18_07 { /* top: 31px; */ left: 128px;    bottom: 0px; /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */ -webkit-animation: slideInUp 1.5s both 0.9s; -moz-animation: slideInUp 1.5s both 0.9s; animation: slideInUp 1.5s both 0.9s;}
+.visible img#img19_07 { top: 221px; left: 290px;    -webkit-animation: fadeIn 2s both 0.5s; -moz-animation: fadeIn 2s both 0.5s; animation: fadeIn 2s both 0.5s;}
+.visible img#img20_07 { top: 669px; left: 103px;  -webkit-animation: fadeIn 2s both 1.2s; -moz-animation: fadeIn 2s both 1.2s; animation: fadeIn 2s both 1.2s;}
+.visible img#img21_07 { top: 535px; left: 159px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_07 { top: 43px; left: 194px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_07 { top: 112px; left: 104px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_07 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_07 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+.visible #div1_07 {top: 240px; left: 240px; width: 173px; height: 373px;position: relative;overflow: hidden;}
+.visible #div2_07 {
+    top: -133px;  
+    left: 440px;  width: 173px;  height: 373px;  position: relative;  overflow: hidden;
+}
+.visible #div3_07 {
+    top: -510px;  
+    left: 650px;  width: 173px;  height: 373px;  position: relative;  overflow: hidden;
+}
+
+img#img12_07.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_07.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_07.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_07 	{ top: 387px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_07 	{ top: 457px;  left: 173px;}
+#btn_show3_07 	{ top: 437px; left: 573px; }
+#btn_show4_07 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_07 { bottom: -1px; left: 0px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_maxi2_07 { bottom: 260px; left: 24px; }
+#btn_maxi3_07 { top: 587px; left: 33px; }
+#btn_maxi4_07 { top: 587px; left: 33px; }
+
+#showDiv_1_07{ top: 118px; left: 41px; width: 840px; height: 80px;}
+#showDiv_2_07{ top: 100px; left: 63px; width: 909px; height: 553px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#showDiv_3_07{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_07{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_07 {
+    background: url("../media/images/07_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_07 { /* background: url("../media/images/07_popub_bk.png") 0px 0px no-repeat; */}
+#popubDiv_3_07 {
+    background: url("../media/images/07_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_07 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_07	{top: 66px; left: 665px;}
+#pdfLink2_07	{top: 118px; left: 660px;}
+#pdfLink3_07	{top: 616px; left: 828px;}
+#pdfLink4_07	{top: 559px; left: 785px;}
+#pdfLink5_07	{top: 590px; left: 772px;}
+
+
+img#img1_08 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_08 { top: 89px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_08 { top: 0px; left: 17px;  }
+.visible img#img4_08 { /* top: 74px; */ /* left: 40px; */   -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img5_08 { top: 0px; left: 60px;  /* -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s; */}
+.visible img#img6_08 { top: 415px; left: 41px;  /* -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s; */}
+.visible img#img7_08 { top: 115px; left: 121px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img8_08 { top: 190px; left: 210px;  -webkit-animation: fadeIn 1.5s both 0.4s; -moz-animation: fadeIn 1.5s both 0.4s; animation: fadeIn 1.5s both 0.4s;}
+.visible img#img9_08 { top: 203px; left: 88px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img10_08 { /* top: 180px; */ /* left: 794px; */    /* -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s; */}
+.visible img#img11_08 { top: 226px; left: 838px;   }
+.visible img#img12_08 { top: 641px; left: 120px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_08 { top: 425px; left: 244px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_08 { top: 402px; left: 243px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_08 { top: 629px; left: 89px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_08 { top: 517px; left: 633px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_08 { top: 10px; left: 13px; }
+.visible img#img18_08 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_08 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_08 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_08 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_08 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_08 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_08 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_08 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+.visible #div1_08 {top: 20px; left: -2px; width: 890px; height: 0px;position: absolute;overflow: hidden;-webkit-transition: height 5s; -moz-transition: height 5s; transition: height 5s; }
+.visible #div2_08 {top: 193px; left: 796px; width: 136px; height: 0px;position: relative;overflow: hidden;-webkit-transition: height 3s; -moz-transition: height 3s; transition: height 3s; }
+.visible #div3_08 {top: -1206px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: height 3s; -moz-transition: height 3s; transition: height 3s; }
+
+img#img12_08.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_08.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_08.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_08 	{ top: 387px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_08 	{ top: 637px;  left: 423px;}
+#btn_show3_08 	{ top: 437px; left: 573px; }
+#btn_show4_08 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_08 { bottom: -1px; left: 0px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_maxi2_08 { bottom: 250px; left: 24px; }
+#btn_maxi3_08 { top: 587px; left: 33px; }
+#btn_maxi4_08 { top: 587px; left: 33px; }
+
+#showDiv_1_08{ top: 168px; left: 50px; width: 840px; height: 80px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#showDiv_2_08{ top: 209px; left: 93px; width: 772px; height: 470px; -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+#showDiv_3_08{ top: 661px; left: 120px; width: 425px; height: 80px; overflow: visible;}
+#showDiv_4_08{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_08 {
+    background: url("../media/images/08_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_08 { /* background: url("../media/images/08_popub_bk.png") 0px 0px no-repeat; */}
+#popubDiv_3_08 {
+    background: url("../media/images/08_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_08 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_08	{top: 221px; left: 758px;}
+#pdfLink2_08	{top: 597px; left: 817px;}
+#pdfLink3_08	{top: 506px; left: 876px;}
+#pdfLink4_08	{top: 559px; left: 785px;}
+#pdfLink5_08	{top: 590px; left: 772px;} 
+
+
+img#img1_09 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_09 { top: 89px; left: 63px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_09 { top: 416px; left: 69px;  }
+.visible img#img4_09 { /* top: 74px; */ /* left: 40px; */   -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img5_09 { top: 0px; left: 60px;  /* -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s; */}
+.visible img#img6_09 { top: 75px; left: 94px;  /* -webkit-animation: fadeIn 2s both 0s; -moz-animation: fadeIn 2s both 0s; animation: fadeIn 2s both 0s; */}
+.visible img#img7_09 { top: 215px; left: 242px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+
+
+.visible img#img8_09 { /* top: 0px; */ left: 92px; /* position: relative; */}
+.visible img#img9_09 { top: 27px; /* left: 777px; */  /* -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s; */}
+.visible img#img10_09 { top: 13px; left: 827px;   /* position: relative; */}
+
+.visible img#img11_09 { top: 643px; left: 100px;   }
+.visible img#img12_09 { top: 313px; left: 244px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_09 { top: 425px; left: 244px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_09 { top: 402px; left: 243px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_09 { top: 629px; left: 89px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_09 { top: 517px; left: 633px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_09 { top: 10px; left: 13px; }
+.visible img#img18_09 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_09 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_09 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_09 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_09 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_09 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_09 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_09 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+.visible #div1_09 {top: 260px; left: 2px; width: 890px; height: 0px;position: absolute;overflow: hidden;-webkit-transition: height 4s; -moz-transition: height 4s; transition: height 4s; }
+.visible #div2_09 {top: 190px; left: 776px; width: 136px; height: 0px;position: relative;overflow: hidden;-webkit-transition: height 3s; -moz-transition: height 3s; transition: height 3s; }
+.visible #div3_09 {top: -1206px; left: 243px; /* width: 503px; */ width: 0px;height: 603px;position: relative;overflow: hidden;-webkit-transition: height 2s; -moz-transition: height 2s; transition: height 2s; }
+
+img#img12_09.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_09.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_09.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_09 	{ top: 387px;  left: 403px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_09 	{ top: 457px;  left: 173px;}
+#btn_show3_09 	{ top: 437px; left: 573px; }
+#btn_show4_09 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_09 { bottom: 40px; left: 0px; }
+#btn_maxi2_09 { bottom: 87px; left: 124px; }
+#btn_maxi3_09 { top: 587px; left: 33px; }
+#btn_maxi4_09 { top: 587px; left: 33px; }
+
+#showDiv_1_09{ top: 637px; left: 67px; width: 680px; height: 80px;}
+#showDiv_2_09{ top: 188px; left: 0px; width: 888px; height: 478px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#showDiv_3_09{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_09{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_09 {
+    background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_09 { /* background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat; */}
+#popubDiv_3_09 {
+    background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_09 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_09	{top: 41px; left: 758px;}
+#pdfLink2_09	{top: 147px; left: 807px;}
+#pdfLink3_09	{top: 526px; left: 806px;}
+#pdfLink4_09	{top: 658px; left: 731px;}
+#pdfLink5_09	{top: 590px; left: 772px;}
+
+
+img#img1_10 { top: 47px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_10 { top: 49px; left: 353px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_10 { top: 323px; left: 147px;  -webkit-animation: fadeIn 1.5s both 1.8s; -moz-animation: fadeIn 1.5s both 1.8s; animation: fadeIn 1.5s both 1.8s;}
+img#img4_10 { top: 387px; left: 55px;   -webkit-animation: fadeIn 1.5s both 2s; -moz-animation: fadeIn 1.5s both 2s; animation: fadeIn 1.5s both 2s;}
+img#img5_10 { top: 451px; left: 55px;  -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+img#img6_10 { top: 682px; left: 55px;  -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s;}
+.visible img#img7_10 { top: 0px; left: 0px;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+.visible img#img8_10 { top: 50px; left: 650px;  -webkit-animation: fadeIn 1.5s both 1.5s; -moz-animation: fadeIn 1.5s both 1.5s; animation: fadeIn 1.5s both 1.5s;}
+.visible img#img9_10 { top: 0px; left: 0px;  -webkit-animation: fadeIn 1.5s both 0s; -moz-animation: fadeIn 1.5s both 0s; animation: fadeIn 1.5s both 0s;}
+.visible img#img10_10 { top: 0px; left: 0px;    /* -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s; */}
+.visible img#img11_10 { top: 183px; left: 75px;   }
+.visible img#img12_10 { top: 253px; left: 144px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_10 { top: 199px; left: 314px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_10 { top: 254px; left: 378px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_10 { top: 257px; left: 588px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_10 { top: 254px; left: 807px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_10 { top: 478px; left: 163px; }
+.visible img#img18_10 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_10 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_10 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_10 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_10 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_10 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_10 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_10 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+img#img12_10.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_10.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_10.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_10 	{ top: 182px;  left: 443px; -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+#btn_show2_10 	{ top: 204px;  left: 723px;}
+#btn_show3_10 	{ top: 437px; left: 573px; }
+#btn_show4_10 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_10 { bottom: 13px; left: 634px; -webkit-animation: fadeIn 1.5s both 1.5s; -moz-animation: fadeIn 1.5s both 1.5s; animation: fadeIn 1.5s both 1.5s;}
+#btn_maxi2_10 { bottom: 20px; left: 140px; }
+#btn_maxi3_10 { top: 587px; left: 33px; }
+#btn_maxi4_10 { top: 587px; left: 33px; }
+
+#showDiv_1_10{ top: 102px; left: 50px; width: 960px; height: 230px;}
+#showDiv_2_10{ top: 152px; left: 710px; width: 307px; height: 233px;}
+#showDiv_3_10{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_10{ top: 0px; left: 0px; width:600px; height: 250px;}
+
+#popubDiv_1_10 {
+    background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_10 {}
+#popubDiv_3_10 {
+    background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_10 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_10	{top: 91px; left: 798px;}
+#pdfLink2_10	{top: 292px; left: 824px;}
+#pdfLink3_10	{top: 376px; left: 766px;}
+#pdfLink4_10	{top: 465px; left: 665px;}
+#pdfLink5_10	{top: 590px; left: 772px;}
+
+
+img#img1_11 { top: 15px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+/*img#img2 { top: 148px; left: 36px;  -webkit-animation: slideInRight 2s both 1.3s; -moz-animation: slideInRight 2s both 1.3s; animation: slideInRight 2s both 1.3s;}*/
+img#img2_11 { top: 62px; left: 55px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+
+img#img3_11 { top: 189px; left: 55PX;  -webkit-animation: fadeIn 1.5s both 1.6s; -moz-animation: fadeIn 1.5s both 1.6s; animation: fadeIn 1.5s both 1.6s;}
+img#img4_11 { top: 478px; left: 55px;   -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+img#img5_11 { top: 510px; left: 55px;  -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+img#img6_11 { top: 715px; left: 55px;  -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s;}
+img#img7_11 { top: 667px; left: 369px;  -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+img#img8_11 { top: 692px; left: 660px;  -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+img#img9_11 { top: 573px; left: 10px;  }
+.visible img#img10_11 { top: 0px; left: 0px;    /* -webkit-animation: fadeIn 1.5s both 1s; -moz-animation: fadeIn 1.5s both 1s; animation: fadeIn 1.5s both 1s; */}
+.visible img#img11_11 { top: 233px; left: 75px;   }
+.visible img#img12_11 { top: 303px; left: 144px; -webkit-animation: fadeIn 1.5s both 1.3s; -moz-animation: fadeIn 1.5s both 1.3s; animation: fadeIn 1.5s both 1.3s;}
+.visible img#img13_11 { top: 249px; left: 314px;  -webkit-animation: fadeIn 1.5s both 0.7s; -moz-animation: fadeIn 1.5s both 0.7s; animation: fadeIn 1.5s both 0.7s;}
+.visible img#img14_11 { top: 302px; left: 378px;  -webkit-animation: fadeIn 1.5s both 1.9s; -moz-animation: fadeIn 1.5s both 1.9s; animation: fadeIn 1.5s both 1.9s;}
+.visible img#img15_11 { top: 304px; left: 588px; -webkit-animation: fadeIn 1.5s both 2.2s; -moz-animation: fadeIn 1.5s both 2.2s; animation: fadeIn 1.5s both 2.2s;}
+.visible img#img16_11 { top: 303px; left: 807px; -webkit-animation: fadeIn 1.5s both 2.5s; -moz-animation: fadeIn 1.5s both 2.5s; animation: fadeIn 1.5s both 2.5s;}
+.visible img#img17_11 { top: 10px; left: 13px; }
+.visible img#img18_11 { top: 31px; left: 0px;    /* -webkit-animation: fadeIn 2s both 2.4s; -moz-animation: fadeIn 2s both 2.4s; animation: fadeIn 2s both 2.4s; */}
+.visible img#img19_11 { top: 35px; left: 10px;    /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img20_11 { top: 414px; left: 23px;  /* -webkit-animation: fadeIn 2s both 1.8s; -moz-animation: fadeIn 2s both 1.8s; animation: fadeIn 2s both 1.8s; */}
+.visible img#img21_11 { top: 413px; left: 188px;   /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img22_11 { top: 413px; left: 354px;   /* -webkit-animation: fadeIn 1.5s both 2.1s; -moz-animation: fadeIn 1.5s both 2.1s; animation: fadeIn 1.5s both 2.1s; */}
+.visible img#img23_11 { top: 422px; left: 36px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+.visible img#img24_11 { top: 424px; left: 196px;  /* -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s; */}
+.visible img#img25_11 { top: 422px; left: 364px;  /* -webkit-animation: fadeIn 2s both 2.5s; -moz-animation: fadeIn 2s both 2.5s; animation: fadeIn 2s both 2.5s; */}
+
+img#img12_11.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14_11.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16_11.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}
+
+#btn_show1_11 	{ top: 197px;  left: 173px;}
+#btn_show2_11 	{ top: 204px;  left: 723px;}
+#btn_show3_11 	{ top: 437px; left: 573px; }
+#btn_show4_11 	{ top: 587px; left: 33px; }
+
+#btn_maxi1_11 { bottom: 8px; left: 628px; }
+#btn_maxi2_11 { bottom: 20px; left: 140px; }
+#btn_maxi3_11 { top: 587px; left: 33px; }
+#btn_maxi4_11 { top: 587px; left: 33px; }
+
+#showDiv_1_11{ top: 102px; left: 50px; width: 670px; height: 230px;}
+#showDiv_2_11{ top: 152px; left: 710px; width: 197px; height: 153px;}
+#showDiv_3_11{ top: 111px; left: 360px; width: 505px; height: 630px; overflow: visible;}
+#showDiv_4_11{ top: 0px; left: 0px; width:600px; height: 250px;}
+#div5_11 {
+    position: absolute;
+ 
+    color: #FFFFFF;
+    top: 635px;
+    left: -45px;
+    transform: rotateZ(90deg);
+}
+#popubDiv_1_11 {
+    background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat;
+ }
+#popubDiv_2_11 {}
+#popubDiv_3_11 {
+    background: url("../media/images/09_popub_bk.png") 0px 0px no-repeat;
+}
+#popubDiv_4_11 { top: 0px; left: 0px; width:600px; height: 250px;}
+
+#pdfLink1_11	{top: 91px; left: 368px;}
+#pdfLink2_11	{top: 92px; left: 467px;}
+#pdfLink3_11	{top: 129px; left: 576px;}
+#pdfLink4_11	{top: 170px; left: 665px;}
+#pdfLink5_11	{top: 210px; left: 422px;}
+#pdfLink6_11	{top: 211px; left: 541px;}
+#pdfLink7_11	{top: 460px; left: 801px;}
+
+
+.displayNone{
+	display: none;
+}
+
+.displayBlock{
+	display: block;
+}

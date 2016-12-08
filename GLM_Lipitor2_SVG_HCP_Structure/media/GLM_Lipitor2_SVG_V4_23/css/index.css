@@ -1,0 +1,19 @@
+#slide-content{background: #DCF2FD url("../media/images/layout/back.svg") no-repeat;}
+
+img#img1 { top: 202px; left: 61px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+img#img2 { top: 274px; left: 406px;  -webkit-animation: fadeIn 2s both 1.5s; -moz-animation: fadeIn 2s both 1.5s; animation: fadeIn 2s both 1.5s;}
+img#img3 { top: 314px; left: 160px;   -webkit-animation: fadeIn 1.5s both 2s; -moz-animation: fadeIn 1.5s both 2s; animation: fadeIn 1.5s both 2s;}
+img#img4 { top: 301px; left: 268px;   -webkit-animation: bounceInRight 1.5s both 1.8s; -moz-animation: bounceInRight 1.5s both 1.8s; animation: bounceInRight 1.5s both 1.8s;}
+img#img5 { top: 301px; left: 597px;  -webkit-animation: bounceInLeft 1.5s both 1.8s; -moz-animation: bounceInLeft 1.5s both 1.8s; animation: bounceInLeft 1.5s both 1.8s;}
+img#img6 { top: 387px; left: 578px;  -webkit-animation: slideInRight 2s both 2.3s; -moz-animation: slideInRight 2s both 2.3s; animation: slideInRight 2s both 2.3s;}
+img#img7 { top: 388px; left: 327px;  -webkit-animation: slideInRight 2s both 2.5s; -moz-animation: slideInRight 2s both 2.5s; animation: slideInRight 2s both 2.5s;}
+img#img8 { top: 388px; left: 118px;  -webkit-animation: slideInDown 2s both 2.7s; -moz-animation: slideInDown 2s both 2.7s; animation: slideInDown 2s both 2.7s;}
+img#img9 { top: 513px; left: 129px;  -webkit-animation: bounceIn  2s both 2.9s; -moz-animation: bounceIn  2s both 2.9s; animation: bounceIn  2s both 2.9s;}
+img#img10 { top: 523px; left: 394px;    -webkit-animation: slideInRight 2s both 3.2s; -moz-animation: slideInRight 2s both 3.2s; animation: slideInRight 2s both 3.2s;}
+img#img11 { top: 608px; left: 144px;    -webkit-animation: rotateIn 2s both 3.4s; -moz-animation: rotateIn 2s both 3.4s; animation: rotateIn 2s both 3.4s;}
+/*img#img12.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}*/
+
+#refBtn 	{ top: 650px; left: 893px; -webkit-animation: zoomIn 1.5s both 1.3s; -moz-animation: zoomIn 1.5s both 1.3s; animation: zoomIn 1.5s both 1.3s;}
+#refBtn_2 	{ top: 106px; left: 911px; }

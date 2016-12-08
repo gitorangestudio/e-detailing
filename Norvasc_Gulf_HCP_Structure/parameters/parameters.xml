@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Sequence Id="Norvasc_Gulf_v7_01" NumberOfSlides="1" Orientation="Landscape" xmlns="urn:param-schema">
+   <Links>
+      <Link SequenceId="Norvasc_Gulf_v7_02" />
+      <Link SequenceId="Norvasc_Gulf_v7_03" />
+      <Link SequenceId="Norvasc_Gulf_v7_04" />
+      <Link SequenceId="Norvasc_Gulf_v7_05" />
+      <Link SequenceId="Norvasc_Gulf_v7_06" />
+      <Link SequenceId="Norvasc_Gulf_v7_07" />
+      <Link SequenceId="Norvasc_Gulf_v7_08" />
+      <Link SequenceId="Norvasc_Gulf_v7_09" />
+      <Link SequenceId="Norvasc_Gulf_v7_10" />
+      <Link SequenceId="Norvasc_Gulf_v7_11" />
+   </Links>
+</Sequence>

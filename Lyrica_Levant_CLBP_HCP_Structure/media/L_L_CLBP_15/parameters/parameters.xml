@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Sequence Id="L_L_CLBP_15" NumberOfSlides="1" Orientation="Landscape" xmlns="urn:param-schema">
+   <Links>
+      <Link SequenceId="L_L_CLBP_01" />
+      <Link SequenceId="L_L_CLBP_02" />
+      <Link SequenceId="L_L_CLBP_03" />
+      <Link SequenceId="L_L_CLBP_04" />
+      <Link SequenceId="L_L_CLBP_05" />
+      <Link SequenceId="L_L_CLBP_06" />
+      <Link SequenceId="L_L_CLBP_07" />
+      <Link SequenceId="L_L_CLBP_08" />
+      <Link SequenceId="L_L_CLBP_09" />
+      <Link SequenceId="L_L_CLBP_10" />
+      <Link SequenceId="L_L_CLBP_11" />
+      <Link SequenceId="L_L_CLBP_12" />
+      <Link SequenceId="L_L_CLBP_13" />
+      <Link SequenceId="L_L_CLBP_14" />
+      <Link SequenceId="L_L_CLBP_16" />
+      <Link SequenceId="L_L_CLBP_17" />
+   </Links>
+</Sequence>

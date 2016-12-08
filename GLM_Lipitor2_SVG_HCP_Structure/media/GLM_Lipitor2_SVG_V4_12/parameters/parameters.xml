@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Sequence Id="GLM_Lipitor2_SVG_V4_12" NumberOfSlides="1" Orientation="Landscape" xmlns="urn:param-schema">
+   <Links>
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_01" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_02" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_03" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_04" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_05" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_06" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_07" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_08" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_09" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_10" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_11" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_13" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_14" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_15" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_16" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_17" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_18" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_19" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_20" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_21" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_22" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_23" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_24" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_25" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_26" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_27" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_28" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_29" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_30" />
+      <Link SequenceId="GLM_Lipitor2_SVG_V4_31" />
+   </Links>
+</Sequence>

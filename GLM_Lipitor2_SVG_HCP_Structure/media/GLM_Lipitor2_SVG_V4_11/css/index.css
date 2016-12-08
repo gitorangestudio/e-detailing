@@ -1,0 +1,20 @@
+#slide-content{background: #DCF2FD url("../media/images/layout/back.svg") no-repeat;}
+
+img#img1 { top: 182px; left: 104px;    -webkit-animation: fadeIn 2s both 1s; -moz-animation: fadeIn 2s both 1s; animation: fadeIn 2s both 1s;}
+img#img2 { top: 344px; left: 25px;  -webkit-animation: slideInLeft 2s both 1.3s; -moz-animation: slideInLeft 2s both 1.3s; animation: slideInLeft 2s both 1.3s;}
+img#img3 { top: 251px; left: 240px;   -webkit-animation: fadeIn 1.5s both 1.5s; -moz-animation: fadeIn 1.5s both 1.5s; animation: fadeIn 1.5s both 1.5s;}
+img#img4 { top: 0px; left: 0;  }
+img#img5 { top: 96px; /* left: 597px; */ }
+img#img6 { top: 265px; left: 784px;  -webkit-animation: slideInDown 2s both 2.3s; -moz-animation: slideInDown 2s both 2.3s; animation: slideInDown 2s both 2.3s;}
+img#img7 { top: 265px; left: 882px;  -webkit-animation: slideInRight 2s both 2.5s; -moz-animation: slideInRight 2s both 2.5s; animation: slideInRight 2s both 2.5s;}
+img#img8 { top: 398px; left: 882px;  -webkit-animation: slideInDown 2s both 2.7s; -moz-animation: slideInDown 2s both 2.7s; animation: slideInDown 2s both 2.7s;}
+img#img9 { top: 533px; left: 756px;  -webkit-animation: bounceIn  2s both 2.9s; -moz-animation: bounceIn  2s both 2.9s; animation: bounceIn  2s both 2.9s;}
+.graph { position: relative; width: 0px; height: 275px; top: 307px; left: 327px;overflow: hidden; -webkit-transition: width 3s; -moz-transition: width 3s; transition: width 3s;}
+
+
+/*img#img12.otherAnimation { -webkit-animation: bounce 1.5s; -moz-animation: bounce 1.5s; animation: bounce 1.5s;}
+img#img14.otherAnimation { -webkit-animation: bounce 1.7s; -moz-animation: bounce 1.7s; animation: bounce 1.7s;}
+img#img16.otherAnimation { -webkit-animation: bounce 1.9s; -moz-animation: bounce 1.9s; animation: bounce 1.9s;}*/
+
+#refBtn 	{ top: 650px; left: 893px; -webkit-animation: zoomIn 1.5s both 1.3s; -moz-animation: zoomIn 1.5s both 1.3s; animation: zoomIn 1.5s both 1.3s;}
+#refBtn_2 	{ top: 106px; left: 911px; }
